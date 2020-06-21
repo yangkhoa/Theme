@@ -1,0 +1,40 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-bao-hiem {
+  width: 0.90625em;
+}
+
+.icon-iman {
+  width: 0.875em;
+}
+
+.icon-luong {
+  width: 0.65625em;
+}
+
+.icon-more2 {
+  width: 0.96875em;
+}
+
+.icon-team {
+  width: 1.1875em;
+}
+
+.icon-uu-dai {
+  width: 1.28125em;
+}

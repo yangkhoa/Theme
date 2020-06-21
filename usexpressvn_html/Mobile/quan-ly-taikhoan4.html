@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="description" content="Trang thương mại điện tử">
+	<meta name="keywords" content="Bán lẻ, bán buôn">
+	<title>Thanh toán</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="all" />
+	<link rel="stylesheet" href="css/m_custom.css" media="all" />
+</head>
+<body class="white">
+	<header class="header-block thanh_toan">
+		<a class="back_step" href=""><img src="images/icons/back_step.svg" alt=""></a>
+        <h1>Sổ địa chỉ</h1>
+        <a href="javascript:;" class="cart-segment">
+            <svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-shopping-cart"></use></svg>
+            <span class="cart_num">3</span>
+        </a>
+	</header>
+	<section id="main_container" class="management_user page-payer clearfix">
+       <div class="payer_tr edit_info section_inner ">
+            <div class="checkbox_address">
+                <div class="item">
+                    <label class="r_cbbtton radio-inline">
+                        <p>
+                            <strong>Phạm Văn Chiến </strong>
+                            <span class="phone">0945666675</span>
+                            Số 14 ngõ 56 đường Hoàng Đạo Thúy, phường Nhân Chính, quận Thanh Xuân, Hà Nội
+                        </p>
+                        <input type="radio" name="radio" checked>
+                        <span class="checkmark"></span>
+                        <div class="option">
+                            <a class="delete" href="">×</a>
+                            <a class="edit" href=""><svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-edit"></use></svg></a>
+                        </div>
+                    </label>
+                    <a href="" class="btn active">Địa chỉ mặc định</a> 
+                </div>                           
+                <div class="item">
+                    <label class="r_cbbtton radio-inline">
+                        <p>
+                            <strong>Phạm Văn Chiến </strong>
+                            <span class="phone">0945666675</span>
+                            Số 14 ngõ 56 đường Hoàng Đạo Thúy, phường Nhân Chính, quận Thanh Xuân, Hà Nội
+                        </p>
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                        <div class="option">
+                            <a class="delete" href="">×</a>
+                            <a class="edit" href=""><svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-edit"></use></svg></a>
+                        </div>
+                    </label>
+                    <a href="" class="btn">Đặt làm mặc định</a> 
+                </div>                           
+            </div> 
+            <div class="add_adress line-12px mar_am">
+               <a class="color_green2" href=""><span class="plus">+</span> Thêm địa chỉ giao hàng mới</a>         
+            </div>                 
+        </div> 
+	</section>
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/svgxuse.min.js" defer></script>
+	<script type="text/javascript" src="js/m_common.js"></script>
+	<script>
+		$( ".dkdn_muahang .form-check" ).click(function() {
+			$(this).addClass('active_ck');
+			$(this).siblings().removeClass('active_ck');
+		});
+        $(".form-group").click(function(){
+            $(this).addClass('focus');
+            $(this).siblings().removeClass('focus');
+        }); 		
+	</script>
+</body>
+</html>

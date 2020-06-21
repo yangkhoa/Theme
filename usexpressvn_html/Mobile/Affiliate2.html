@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Trang thương mại điện tử">
+    <meta name="keywords" content="Bán lẻ, bán buôn">
+    <title>Thanh toán</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" href="css/m_custom.css" media="all" />
+</head>
+
+<body class="white">
+    <header class="header-block thanh_toan">
+        <a class="back_step" href=""><img src="images/icons/back_step.svg" alt=""></a>
+        <h1>Quảng lý đơn hàng giới thiệu</h1>
+        <a href="javascript:;" class="cart-segment">
+            <svg class="icon-us">
+                <use xlink:href="images/icon-us.svg#icon-shopping-cart"></use>
+            </svg>
+            <span class="cart_num">3</span>
+        </a>
+    </header>
+    <section id="main_container" class="affiliate_setting  clearfix">
+        <div class="section_inner affiliate_top form_default">
+            <div class="form-group">
+                <select class="checkout-field _select location form-control radius" data-val="true" data-val-range=""
+                    data-val-range-max="100000" data-val-range-min="1" id="cboProvinceReceiver"
+                    name="ProvinceIdReceiver">
+                    <option value="-1">Trạng thái đơn hàng</option>
+                    <option value="01">Hoàn thành</option>
+                    <option value="02">Đang xử lý</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="checkout-field _select location form-control radius" data-val="true" data-val-range=""
+                    data-val-range-max="100000" data-val-range-min="1" id="cboProvinceReceiver"
+                    name="ProvinceIdReceiver">
+                    <option value="-1">Tìm kiếm theo loại ngày</option>
+                    <option value="01">Hoàn thành</option>
+                    <option value="02">Đang xử lý</option>
+                </select>
+            </div>
+            <div class="form-group flex date_to_from">
+                <input class="datepicker form-control" type="text" readonly="readonly" value="Từ ngày...">
+                <input class="datepicker form-control" type="text" readonly="readonly" value="Đến ngày...">
+            </div>
+            <a href="/" class="btn full mb10">Tìm kiếm</a>
+        </div>
+        <div class="line-8px"></div>
+        <h2 class="bg-title">Danh sách đơn hàng</h2>
+        <div class="order-affiliate">
+            <p>Mã đơn hàng: <span class="color_green2">UAM-9C12345</span> <span class="black">- Hàng đang về
+                    Việt Nam</span></p>
+            <p>Ngày đặt hàng: <span class="black">20/07/2019</span></p>
+            <p>Ngày nhận hàng: <span class="black">Dự kiến 31/07/2019</span></p>
+            <p>Tiền hàng tại Mỹ: <span class="black"><strong class="price">23,450,000 <em>đ</em></strong>
+                    ($979.99)</span></p>
+        </div>
+        <div class="order-affiliate">
+            <p>Mã đơn hàng: <span class="color_green2">UAM-9C12345</span> <span class="black">- Đã nhận hàng</span></p>
+            <p>Ngày đặt hàng: <span class="black">20/07/2019</span></p>
+            <p>Ngày nhận hàng: <span class="black">Dự kiến 31/07/2019</span></p>
+            <p>Tiền hàng tại Mỹ: <span class="black"><strong class="price">23,450,000 <em>đ</em></strong>
+                    ($979.99)</span></p>
+        </div>
+        <div class="order-affiliate">
+            <p>Mã đơn hàng: <span class="color_green2">UAM-9C12345</span> <span class="black">- Đã nhận hàng</span></p>
+            <p>Ngày đặt hàng: <span class="black">20/07/2019</span></p>
+            <p>Ngày nhận hàng: <span class="black">Dự kiến 31/07/2019</span></p>
+            <p>Tiền hàng tại Mỹ: <span class="black"><strong class="price">23,450,000 <em>đ</em></strong>
+                    ($979.99)</span></p>
+        </div>
+
+
+    </section>
+
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/svgxuse.min.js" defer></script>
+    <script src="js/zebra_datepicker.min.js"></script>
+    <script type="text/javascript" src="js/m_common.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.datepicker').Zebra_DatePicker({
+                format: 'd/m/Y'
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="description" content="Trang thương mại điện tử">
+	<meta name="keywords" content="Bán lẻ, bán buôn">
+	<title>Thanh toán</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="all" />
+	<link rel="stylesheet" href="css/m_custom.css" media="all" />
+</head>
+<body class="white">
+	<header class="header-block thanh_toan">
+		<a class="back_step" href=""><img src="images/icons/back_step.svg" alt=""></a>
+        <h1>Thêm địa chỉ mới</h1>
+        <a href="javascript:;" class="cart-segment">
+            <svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-shopping-cart"></use></svg>
+            <span class="cart_num">3</span>
+        </a>
+	</header>
+	<section id="main_container" class="management_user clearfix">
+        <div class="section_inner page-payer">
+            <form>
+                <div class="form-group">
+                    <input type="" class="form-control" id="" name="" placeholder="Họ và tên người nhận">
+                </div>
+                <div class="form-group">
+                    <input type="" class="form-control" id="" name="" placeholder="Điện thoại">
+                </div> 
+                <div class="form-group location">
+                    <svg class="down icon-us"><use xlink:href="images/icon-us.svg#icon-Polygon"></use></svg>
+                    <input type="" class="form-control" data-target="#popup_location1" data-toggle="modal" id="" placeholder="Tỉnh / Thành phố" name="">
+                </div>
+                <div class="row">
+                    <div class="form-group width_50 location">
+                        <svg class="down icon-us"><use xlink:href="images/icon-us.svg#icon-Polygon"></use></svg>
+                        <input type="" class="form-control" data-target="#popup_location2" data-toggle="modal" id="" placeholder="Quận/Huyện" name="">                            
+                    </div> 
+                    <div class="form-group width_50 location">
+                        <svg class="down icon-us"><use xlink:href="images/icon-us.svg#icon-Polygon"></use></svg>
+                        <input type="" class="form-control" data-target="#popup_location3" data-toggle="modal" id="" placeholder="Phường/Xã" name="">                            
+                    </div>
+                </div>                
+                <div class="form-group mb20">
+                    <input type="" class="form-control" id="" placeholder="Số nhà, đường phố" name="">
+                </div>
+                <div class="form-group tc_tutaotk" style="margin-top:40px">
+                    <label class="confir_res">
+                        Đặt làm địa chỉ nhận hàng mặc định
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>              
+                </div>                                   
+            </form>
+        </div>              
+    </section>
+
+    <div class="margin-fixed" style="height: 60px;"></div>
+    <section class="btn-fixed-block" style="transform: none;">
+	    <button class="btn btn-block">thêm địa chỉ mới</button>
+	</section>
+
+    <!-- Popup Danh sach thành phố -->
+    <div class="modal fade popupdsach_popupnh" id="popup_location1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <div class="dsach_popupnh">
+                        <h2>Chọn Tỉnh / Thành phố</h2>
+                        <div class="h_tkmnumb">
+                            <form action="">
+                                <button type="submit" class="btn_search" value="" name="btn_search"><svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-search-grey"></use></svg></button>
+                                <input maxlength="80" class="input_form" placeholder="Tìm thành phố" type="search">
+                            </form>
+                        </div>
+                        <ul>
+                            <li>Hà Nội</li>
+                            <li>TP.HCM</li>
+                            <li>Đà Nẵng</li>
+                            <li>Hải Phòng</li>
+                            <li>Bắc Ninh</li>
+                            <li>Hà Nội</li>
+                            <li>TP.HCM</li>
+                            <li>Đà Nẵng</li>
+                            <li>Hải Phòng</li>
+                            <li>Bắc Ninh</li>
+                            <li>Hà Nội</li>
+                            <li>TP.HCM</li>
+                            <li>Đà Nẵng</li>
+                            <li>Hải Phòng</li>
+                            <li>Bắc Ninh</li>
+                            <li>Hà Nội</li>
+                            <li>TP.HCM</li>
+                            <li>Đà Nẵng</li>
+                            <li>Hải Phòng</li>
+                            <li>Bắc Ninh</li>                                                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup Danh sach quận huyện -->
+    <div class="modal fade popupdsach_popupnh" id="popup_location2" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <div class="dsach_popupnh">
+                        <h2>Chọn Quận / Huyện</h2>
+                        <div class="h_tkmnumb">
+                            <form action="">
+                                <button type="submit" class="btn_search" value="" name="btn_search"><svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-search-grey"></use></svg></button>
+                                <input maxlength="80" class="input_form" placeholder="Tìm quận huyện" type="search">
+                            </form>
+                        </div>
+                        <ul>
+                            <li>Ba Đình</li>
+                            <li>Hoàn Kiếm</li>
+                            <li>Hai Bà Trưng</li>
+                            <li>Cầu Giấy</li>
+                            <li>Long Biên</li>
+                            <li>Ba Đình</li>
+                            <li>Hoàn Kiếm</li>
+                            <li>Hai Bà Trưng</li>
+                            <li>Cầu Giấy</li>
+                            <li>Long Biên</li>
+                            <li>Ba Đình</li>
+                            <li>Hoàn Kiếm</li>
+                            <li>Hai Bà Trưng</li>
+                            <li>Cầu Giấy</li>
+                            <li>Long Biên</li>                                                                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Danh sách Phường/Xã -->
+    <div class="modal fade popupdsach_popupnh" id="popup_location3" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <div class="dsach_popupnh">
+                        <h2>Chọn Phường/Xã</h2>
+                        <div class="h_tkmnumb">
+                            <form action="">
+                                <button type="submit" class="btn_search" value="" name="btn_search"><svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-search-grey"></use></svg></button>
+                                <input maxlength="80" class="input_form" placeholder="Tìm phường xã" type="search">
+                            </form>
+                        </div>
+                        <ul>
+                            <li>Ba Đình</li>
+                            <li>Hoàn Kiếm</li>
+                            <li>Hai Bà Trưng</li>
+                            <li>Cầu Giấy</li>
+                            <li>Long Biên</li>
+                            <li>Ba Đình</li>
+                            <li>Hoàn Kiếm</li>
+                            <li>Hai Bà Trưng</li>
+                            <li>Cầu Giấy</li>
+                            <li>Long Biên</li>
+                            <li>Ba Đình</li>
+                            <li>Hoàn Kiếm</li>
+                            <li>Hai Bà Trưng</li>
+                            <li>Cầu Giấy</li>
+                            <li>Long Biên</li>                                                                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/svgxuse.min.js" defer></script>
+	<script type="text/javascript" src="js/m_common.js"></script>
+</body>
+</html>

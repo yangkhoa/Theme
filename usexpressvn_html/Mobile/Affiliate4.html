@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Trang thương mại điện tử">
+    <meta name="keywords" content="Bán lẻ, bán buôn">
+    <title>Thanh toán</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" href="css/m_custom.css" media="all" />
+</head>
+
+<body class="white">
+    <header class="header-block thanh_toan">
+        <a class="back_step" href=""><img src="images/icons/back_step.svg" alt=""></a>
+        <h1>Chi tiết đối soát hoa hồng</h1>
+        <a href="javascript:;" class="cart-segment">
+            <svg class="icon-us">
+                <use xlink:href="images/icon-us.svg#icon-shopping-cart"></use>
+            </svg>
+            <span class="cart_num">3</span>
+        </a>
+    </header>
+    <section id="main_container" class="affiliate_setting  clearfix">
+        <h2 class="bg-title">Danh sách đơn hàng - Tháng 07/2019</h2>
+        <div class="order-affiliate">
+            <p>Mã đơn hàng: <span class="color_green2">UAM-9C12345</span> <span class="black">- Hàng đang về
+                    Việt Nam</span></p>
+            <p>Ngày đặt hàng: <span class="black">20/07/2019</span></p>
+            <p>Ngày nhận hàng: <span class="black">Dự kiến 31/07/2019</span></p>
+            <p>Tiền hàng tại Mỹ: <span class="black"><strong class="price">23,450,000 <em>đ</em></strong>
+                    ($979.99)</span></p>
+        </div>
+        <div class="order-affiliate">
+            <p>Mã đơn hàng: <span class="color_green2">UAM-9C12345</span> <span class="black">- Hàng đang về
+                    Việt Nam</span></p>
+            <p>Ngày đặt hàng: <span class="black">20/07/2019</span></p>
+            <p>Ngày nhận hàng: <span class="black">Dự kiến 31/07/2019</span></p>
+            <p>Tiền hàng tại Mỹ: <span class="black"><strong class="price">23,450,000 <em>đ</em></strong>
+                    ($979.99)</span></p>
+        </div>
+        <div class="order-affiliate no-border">
+            <p>Mã đơn hàng: <span class="color_green2">UAM-9C12345</span> <span class="black">- Hàng đang về
+                    Việt Nam</span></p>
+            <p>Ngày đặt hàng: <span class="black">20/07/2019</span></p>
+            <p>Ngày nhận hàng: <span class="black">Dự kiến 31/07/2019</span></p>
+            <p>Tiền hàng tại Mỹ: <span class="black"><strong class="price">23,450,000 <em>đ</em></strong>
+                    ($979.99)</span></p>
+        </div>
+        <div class="line-8px"></div>
+        <h2 class="bg-title">Doanh thu và hoa hồng - Tháng 07/2019</h2>
+        <div class="order-affiliate">
+            <ul class="black grid1 txt_14">
+                <li>
+                    <div class="td1">Tổng tiền hàng tại Mỹ</div>
+                    <div class="td2 price">45,000,000 <em>đ</em> ($1800.99)</div>
+                </li>
+                <li>
+                    <div class="td1">Tổng tiền hoa hồng (tạm tính)
+                        <a class="togle">
+                            <svg class="icon-us">
+                                <use xlink:href="images/icon-us.svg#icon-information-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="td2 price"><strong>4,200,000 <em>đ</em></strong></div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="order-affiliate">
+            <ul class="info">
+                <li>
+                    <div class="td1">
+                        <p>Trạng thái:</p>
+                        <p>Tài khoản:</p>
+                    </div>
+                    <div class="td2">
+                        <p>Đã thanh toán</p>
+                        <p>Phạm Văn Chiến</p>
+                        <p>STK: 0011004115336</p>
+                        <p>Ngân hàng: Vietcombank</p>
+                        <p>Chi nhánh: Sở giao dịch</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="order-affiliate black no-border">
+            <p><strong>Ghi chú:</strong></p>
+            <p>- Tổng tiền hoa hồng là số tiền tạm tính, và có thể có sự điều chỉnh sau khi chốt trạng thái các đơn hàng
+                giới thiệu.</p>
+            <p>- Sau khi thực hiện đối soát, US Express sẽ thực hiện chi trả hoa hồng vào tài khoản của bạn vào ngày
+                15-20 của tháng kế tiếp.</p>
+        </div>
+    </section>
+
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/svgxuse.min.js" defer></script>
+    <script src="js/zebra_datepicker.min.js"></script>
+    <script type="text/javascript" src="js/m_common.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.datepicker').Zebra_DatePicker({
+                format: 'd/m/Y'
+            });
+            $('.tra_tk').find('.view').click(
+                function () {
+                    if ($(this).next().css('display') == 'none') {
+                        $('.inf').slideUp();
+                        $(this).next().stop(true, true).slideDown();
+                        $('.tra_tk').removeClass('active');
+                        $(this).parent().addClass('active');
+
+                    } else {
+                        $(this).parent().find('.inf').slideUp();
+                        $('.tra_tk').removeClass('active');
+                    }
+                }
+            )
+        });
+    </script>
+</body>
+
+</html>

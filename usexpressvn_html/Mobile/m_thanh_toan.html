@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="description" content="Trang thương mại điện tử">
+	<meta name="keywords" content="Bán lẻ, bán buôn">
+    <title>Thanh toán</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="all" />
+	<link rel="stylesheet" href="css/m_custom.css" media="all" />
+</head>
+<body>
+	<header class="header-block thanh_toan">
+		<a class="back_step" href=""><img src="images/icons/back_step.svg" alt=""></a>
+		<h1>Địa chỉ nhận hàng</h1>
+	</header>
+	<section id="main_container" class="page-payer clearfix">
+		<section class="checkout-address">
+			<ul class="checkout-process-bar">
+				<li class="active">
+					<svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-location"></use></svg>
+					<span class="checkout-process-bar__text">Nhập địa chỉ</span>
+				</li>
+				<li>
+					<div class="line left"></div>
+                    <svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-payment"></use></svg>
+					<span class="checkout-process-bar__text">Chọn thanh toán</span>
+				</li>
+				<li>
+					<div class="line line--right"></div>
+                    <svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-checked2"></use></svg>
+					<span class="checkout-process-bar__text">Xác nhận</span>
+				</li>
+			</ul>
+		</section>	
+		<section class="bg_white mgrb_10 section_inner mar-top">
+            <div class="payer_tr page-payer__step1">
+                <h2 class="title">Địa chỉ người nhận</h2>
+                <form>
+                    <div class="form-group">
+                        <label class="txt_notifi">Họ và tên người nhận</label>
+                        <input type="" onclick="getFocus()"  class="form-control" id="" placeholder="Họ và tên người nhận" name="">
+                    </div>
+                    <div class="form-group">
+                        <label class="txt_notifi">Điện thoại</label>
+                        <input type="" class="form-control" id="" placeholder="Điện thoại" name="">
+                    </div>           
+                    <div class="form-group location">
+                        <label class="txt_notifi">Tỉnh / Thành phố</label>
+                        <svg class="down icon-us"><use xlink:href="images/icon-us.svg#icon-Polygon"></use></svg>
+                        <input type="" class="form-control" data-target="#popup_location1" data-toggle="modal" id="" placeholder="Tỉnh / Thành phố" name="">
+                    </div> 
+                    <div class="row">
+                        <div class="form-group width_50 location">
+                            <label class="txt_notifi">Quận/Huyện</label>
+                            <svg class="down icon-us"><use xlink:href="images/icon-us.svg#icon-Polygon"></use></svg>
+                            <input type="" class="form-control" data-target="#popup_location2" data-toggle="modal" id="" placeholder="Quận/Huyện" name="">                            
+                        </div> 
+                        <div class="form-group width_50 location">
+                            <label class="txt_notifi">Phường/Xã</label>
+                            <svg class="down icon-us"><use xlink:href="images/icon-us.svg#icon-Polygon"></use></svg>
+                            <input type="" class="form-control" data-target="#popup_location3" data-toggle="modal" id="" placeholder="Phường/Xã" name="">                            
+                        </div>
+                    </div>  
+                    <div class="form-group failure mb20">
+                        <label class="txt_notifi text_error">* Nhập số nhà, đường phố</label>
+                        <input type="" class="form-control" id="" placeholder="Số nhà, đường phố" name="">
+                    </div>
+                    <h2 class="title">Thông tin người đặt hàng</h2>
+                    
+                    <div class="form-group tc_tutaotk">
+                        <label class="confir_res">
+                            Thông tin người đặt hàng giống như trên
+                            <input type="checkbox" checked="">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="tt2 mb30">
+                            <label>Họ và tên</label>
+                            <input type="" class="form-control" id="" value="Phạm Văn Chiến">
+                        </div> 
+                        <div class="tt2 mb30">
+                            <label>Điện thoại</label>
+                            <input type="" class="form-control" id="" value="0123456879">
+                        </div>                                                                
+                        <div class="form-group">
+                            <input type="" class="form-control" id="" placeholder="Địa chỉ email (để báo tình trạng đơn hàng)" name="">
+                        </div>                               
+                    </div>
+                    <p>Bạn có muốn tạo tài khoản để nhận các ưu đãi và chủ động tra cứu đơn hàng?</p>
+                    <div class="form-group tc_tutaotk end">
+                        <label class="confir_res">
+                            Tạo tài khoản cho thôi bằng thông tin trên
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>              
+                    </div>                                              
+                </form>                         
+            </div>
+		</section>	
+		
+	</section>
+
+    <!-- Popup Danh sach thành phố -->
+    <div class="modal fade popupdsach_popupnh" id="popup_location1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <div class="dsach_popupnh">
+                        <h2>Chọn Tỉnh / Thành phố</h2>
+                        <div class="h_tkmnumb">
+                            <form action="">
+                                <button type="submit" class="btn_search" value="" name="btn_search"><svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-search-grey"></use></svg></button>
+                                <input maxlength="80" class="input_form" placeholder="Tìm thành phố" type="search">
+                            </form>
+                        </div>
+                        <ul>
+                            <li>Hà Nội</li>
+                            <li>TP.HCM</li>
+                            <li>Đà Nẵng</li>
+                            <li>Hải Phòng</li>
+                            <li>Bắc Ninh</li>
+                            <li>Hà Nội</li>
+                            <li>TP.HCM</li>
+                            <li>Đà Nẵng</li>
+                            <li>Hải Phòng</li>
+                            <li>Bắc Ninh</li>
+                            <li>Hà Nội</li>
+                            <li>TP.HCM</li>
+                            <li>Đà Nẵng</li>
+                            <li>Hải Phòng</li>
+                            <li>Bắc Ninh</li>
+                            <li>Hà Nội</li>
+                            <li>TP.HCM</li>
+                            <li>Đà Nẵng</li>
+                            <li>Hải Phòng</li>
+                            <li>Bắc Ninh</li>                                                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup Danh sach quận huyện -->
+    <div class="modal fade popupdsach_popupnh" id="popup_location2" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <div class="dsach_popupnh">
+                        <h2>Chọn Quận / Huyện</h2>
+                        <div class="h_tkmnumb">
+                            <form action="">
+                                <button type="submit" class="btn_search" value="" name="btn_search"><svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-search-grey"></use></svg></button>
+                                <input maxlength="80" class="input_form" placeholder="Tìm quận huyện" type="search">
+                            </form>
+                        </div>
+                        <ul>
+                            <li>Ba Đình</li>
+                            <li>Hoàn Kiếm</li>
+                            <li>Hai Bà Trưng</li>
+                            <li>Cầu Giấy</li>
+                            <li>Long Biên</li>
+                            <li>Ba Đình</li>
+                            <li>Hoàn Kiếm</li>
+                            <li>Hai Bà Trưng</li>
+                            <li>Cầu Giấy</li>
+                            <li>Long Biên</li>
+                            <li>Ba Đình</li>
+                            <li>Hoàn Kiếm</li>
+                            <li>Hai Bà Trưng</li>
+                            <li>Cầu Giấy</li>
+                            <li>Long Biên</li>                                                                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Danh sách Phường/Xã -->
+    <div class="modal fade popupdsach_popupnh" id="popup_location3" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <div class="dsach_popupnh">
+                        <h2>Chọn Phường/Xã</h2>
+                        <div class="h_tkmnumb">
+                            <form action="">
+                                <button type="submit" class="btn_search" value="" name="btn_search"><svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-search-grey"></use></svg></button>
+                                <input maxlength="80" class="input_form" placeholder="Tìm phường xã" type="search">
+                            </form>
+                        </div>
+                        <ul>
+                            <li>Ba Đình</li>
+                            <li>Hoàn Kiếm</li>
+                            <li>Hai Bà Trưng</li>
+                            <li>Cầu Giấy</li>
+                            <li>Long Biên</li>
+                            <li>Ba Đình</li>
+                            <li>Hoàn Kiếm</li>
+                            <li>Hai Bà Trưng</li>
+                            <li>Cầu Giấy</li>
+                            <li>Long Biên</li>
+                            <li>Ba Đình</li>
+                            <li>Hoàn Kiếm</li>
+                            <li>Hai Bà Trưng</li>
+                            <li>Cầu Giấy</li>
+                            <li>Long Biên</li>                                                                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="margin-fixed" style="height:60px"></div>
+	<section class="btn-fixed-block" style="transform: none;">
+	    <button class="btn btn-block">Giao đến địa chỉ này</button>
+	</section>
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/svgxuse.min.js" defer></script>
+	<script type="text/javascript" src="js/m_common.js"></script>
+	<script>
+		$( ".dkdn_muahang .form-check" ).click(function() {
+			$(this).addClass('active_ck');
+			$(this).siblings().removeClass('active_ck');
+		});
+        $(".form-group").click(function(){
+            $(this).addClass('focus');
+            $(this).siblings().removeClass('focus');
+        });      
+	</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="description" content="Trang thương mại điện tử">
+	<meta name="keywords" content="Bán lẻ, bán buôn">
+	<title>Thanh toán</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="all" />
+	<link rel="stylesheet" href="css/m_custom.css" media="all" />
+</head>
+<body>
+	<header class="header-block thanh_toan">
+		<a class="back_step" href=""><img src="images/icons/back_step.svg" alt=""></a>
+		<h1>Cập nhật địa chỉ</h1>
+	</header>
+	<section id="main_container" class="page-payer clearfix">
+		<section class="checkout-address">
+			<ul class="checkout-process-bar">
+				<li class="active">
+					<svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-location"></use></svg>
+					<span class="checkout-process-bar__text">Nhập địa chỉ</span>
+				</li>
+				<li>
+					<div class="line left"></div>
+                    <svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-payment"></use></svg>
+					<span class="checkout-process-bar__text">Chọn thanh toán</span>
+				</li>
+				<li>
+					<div class="line line--right"></div>
+                    <svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-checked2"></use></svg>
+					<span class="checkout-process-bar__text">Xác nhận</span>
+				</li>
+			</ul>
+		</section>	
+		<section class="bg_white mgrb_10 section_inner mar-top">
+            <div class="payer_tr page-payer__step1">
+            	<p class="mar_am line-12px"></p>
+				<form>
+                    <div class="form-group">
+                        <label class="txt_notifi">Họ và tên người nhận</label>
+                        <input type="" value="Phạm Văn Chiến" class="form-control" id=""  name="">
+                    </div>
+                    <div class="form-group">
+                        <label class="txt_notifi">Điện thoại</label>
+                        <input type="" class="form-control" id="" value="01365259999" name="">
+                    </div> 
+                    <div class="form-group">
+                    	<label class="txt_notifi">Tỉnh/ Thành phố</label>
+                        <select class="checkout-field _select location form-control" data-val="true" data-val-range="Bạn chưa chọn tỉnh thành" data-val-range-max="100000" data-val-range-min="1" id="cboProvinceReceiver" name="ProvinceIdReceiver">
+                            <option value="-1">Tỉnh / Thành phố</option>
+                            <option value="01">Hà Nội</option>
+                            <option value="02">Hà Giang</option>
+                        </select>
+                    </div> 
+                    <div class="row">
+                        <div class="form-group width_50">
+                        	<label class="txt_notifi">Quận/ Huyện</label>
+                            <select class="checkout-field _select location form-control" data-val="true" data-val-range="Bạn chưa chọn quận huyện" data-val-range-max="100000" data-val-range-min="1" id="cboDistrict" name="DistrictId">
+                                <option value="-1">Quận/Huyện</option>
+                                <option value="01">Hà Nội</option>
+                                <option value="02">Hà Giang</option>
+                            </select>
+                        </div> 
+                        <div class="form-group width_50">
+                        	<label class="txt_notifi">Phường/ Xã</label>
+                            <select class="checkout-field _select location form-control" data-val="true" data-val-range="Bạn chưa chọn quận huyện" data-val-range-max="100000" data-val-range-min="1" id="cboDistrict" name="DistrictId">
+                                <option value="-1">Phường/Xã</option>
+                                <option value="01">Hà Nội</option>
+                                <option value="02">Hà Giang</option>
+                            </select>
+                        </div>
+                    </div>  
+                    <div class="form-group mb20">
+                        <label class="txt_notifi">Số nhà, đường phố</label>
+                        <input type="" class="form-control" id="" value="Số 14 ngõ 56 đường Hoàng Đạo Thúy" name="">
+                    </div>                                    
+                </form>                
+                             
+            </div>
+		</section>	
+		
+	</section>
+
+
+	<div class="margin-fixed" style="height:60px"></div>
+	<section class="btn-fixed-block" style="transform: none;">
+	    <button class="btn btn-block">Cập nhật</button>
+	</section>
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/svgxuse.min.js" defer></script>
+	<script type="text/javascript" src="js/m_common.js"></script>
+	<script>
+		$( ".dkdn_muahang .form-check" ).click(function() {
+			$(this).addClass('active_ck');
+			$(this).siblings().removeClass('active_ck');
+		});
+        $(".form-group").click(function(){
+            $(this).addClass('focus');
+            $(this).siblings().removeClass('focus');
+        }); 		
+	</script>
+</body>
+</html>

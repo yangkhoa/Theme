@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="description" content="Trang thương mại điện tử">
+	<meta name="keywords" content="Bán lẻ, bán buôn">
+	<title>Thanh toán</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="all" />
+	<link rel="stylesheet" href="css/m_custom.css" media="all" />
+</head>
+<body class="white">
+	<header class="header-block thanh_toan">
+		<a class="back_step" href=""><img src="images/icons/back_step.svg" alt=""></a>
+        <h1>Tra cứu đơn hàng</h1>
+        <a href="javascript:;" class="cart-segment">
+            <svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-shopping-cart"></use></svg>
+            <span class="cart_num">3</span>
+        </a>
+	</header>
+	<section id="main_container" class="order_management clearfix">
+        <div class="order-section">
+            <h2 class="order-title">Thông tin đơn hàng</h2>
+            <p class="txt_14">Mã đơn hàng: UAM-9C12345</p>
+            <p class="txt_14">Ngày đặt hàng: 20/07/2019</p>
+            <div class="status pendding">Hàng đã về Việt Nam</div>
+            <div class="note">04:15 07/03/2019: Đơn hàng của bạn đã về đến Việt Nam và đang chờ làm thủ tục hải quan, dự kiến giao hàng vào ngày 12/03/2019.</div>
+        </div>
+        <div class="order-section">
+            <h2 class="order-title">Thông tin nhận hàng</h2>
+            <p class="txt_14">Phạm Văn Chiến</p>
+            <p class="txt_14">0945666675</p>
+            <p class="txt_14">Số 14 ngõ 56 đường Hoàng Đạo Thúy, phường Nhân Chính, quận Thanh Xuân, Hà Nội</p>
+        </div>             
+        <div class="order-section">
+            <h2 class="order-title">Hình thức thanh toán</h2>
+            <p class="txt_13">Chuyển khoản trực tiếp cho US Express qua Vietcombank</p>
+            <p><a>Chưa thực hiện thanh toán</a></p>
+            <p>Đơn hàng sẽ tự huỷ nếu chưa được thanh toán trong vòng 24h kể từ thời điểm đặt hàng.</p>
+        </div>             
+        <div class="order-section page-payer">
+            <h2 class="order-title">Chi tiết đơn hàng</h2>
+            <div class="checkout_sidebar">
+                <ul class="list_oder">
+                    <li>
+                        <div class="ava">
+                            <a href=""><img src="images/graphics/sanpham_1.png" alt=""></a>
+                        </div>
+                        <div class="content">
+                            <h3 class="name">Secura 9100MC 1800W Porta ... Black Countertop Burner Black</h3>
+                            <div class="option">Màu: Black, Size: XL</div>
+                            <div class="price"><strong>1,456,789 <em>đ</em></strong></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ava">
+                            <a href=""><img src="images/graphics/sanpham_1.png" alt=""></a>
+                        </div>
+                        <div class="content">
+                            <h3 class="name">Secura 9100MC 1800W Porta ... Black Countertop Burner Black</h3>
+                            <div class="option">Màu: Black, Size: XL</div>
+                            <div class="price"><strong>1,456,789 <em>đ</em></strong></div>
+                        </div>
+                    </li>                                                        
+                </ul>
+                <div class="checkout_tr">
+                    <div class="item">
+                        <p>Tổng số tiền:</p>
+                        <span class="price">3,456,789 <em>đ</em></span>
+                    </div>
+                    <div class="item">
+                        <p>Số tiền bạn được giảm <a class="togle" href=""><svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-information-button"></use></svg></a></p>
+                        <span class="price">-456,789 <em>đ</em></span>
+                    </div>
+                    <div class="item mt10">
+                        <p><strong>Giá về tay</strong></p>
+                        <strong class="price color_green">3,456,789 <em>đ</em></strong>
+                    </div>                    
+                </div>            
+            </div>          
+        </div>             
+	</section>
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/svgxuse.min.js" defer></script>
+	<script type="text/javascript" src="js/m_common.js"></script>
+	<script>
+		$( ".dkdn_muahang .form-check" ).click(function() {
+			$(this).addClass('active_ck');
+			$(this).siblings().removeClass('active_ck');
+		});
+        $(".form-group").click(function(){
+            $(this).addClass('focus');
+            $(this).siblings().removeClass('focus');
+        }); 		
+	</script>
+</body>
+</html>

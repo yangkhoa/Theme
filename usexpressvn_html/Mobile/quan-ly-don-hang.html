@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="description" content="Trang thương mại điện tử">
+	<meta name="keywords" content="Bán lẻ, bán buôn">
+	<title>Thanh toán</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="all" />
+	<link rel="stylesheet" href="css/m_custom.css" media="all" />
+</head>
+
+<body class="white">
+	<header class="header-block thanh_toan">
+		<a class="back_step" href=""><img src="images/icons/back_step.svg" alt=""></a>
+		<h1>Đơn hàng của tôi</h1>
+		<a href="javascript:;" class="cart-segment">
+			<svg class="icon-us">
+				<use xlink:href="images/icon-us.svg#icon-shopping-cart"></use>
+			</svg>
+			<span class="cart_num">3</span>
+		</a>
+	</header>
+	<section id="main_container" class="order_management clearfix">
+		<div class="tab_donhang">
+			<a href="#all" class="active">Chờ thanh toán</a>
+			<a href="#deliver">Đang giao</a>
+			<a href="#pendding">Đã nhận hàng</a>
+			<a href="#deliver">Đã hủy</a>
+		</div>
+		<div class="dtcontent">
+			<div id="all" class="list-dh">
+				<div class="item">
+					<h3><a>Kenneth Cole Men Watch Reaction ... 42mm for Business Man in Vietnam</a></h3>
+					<p class="mb10">và 02 sản phẩm khác từ <a href="">Kho hàng Nordstromrack</a></p>
+					<p>Mã đơn hàng: UAM-9C12345</p>
+					<p>Ngày đặt hàng: 20/07/2019</p>
+					<div class="status pendding">Chờ thanh toán</div>
+				</div>
+				<div class="item">
+					<h3><a>Kenneth Cole Men Watch Reaction ... 42mm for Business Man in Vietnam</a></h3>
+					<p class="mb10"><a href="">Kho hàng Nordstromrack</a></p>
+					<p>Mã đơn hàng: UAM-9C12345</p>
+					<p>Ngày đặt hàng: 20/07/2019</p>
+					<div class="status done">Đã nhận hàng</div>
+				</div>
+				<div class="item">
+					<h3><a>Kenneth Cole Men Watch Reaction ... 42mm for Business Man in Vietnam</a></h3>
+					<p class="mb10">và 02 sản phẩm khác từ <a href="">Kho hàng Nordstromrack</a></p>
+					<p>Mã đơn hàng: UAM-9C12345</p>
+					<p>Ngày đặt hàng: 20/07/2019</p>
+					<div class="status deliver">Đang giao</div>
+				</div>
+				<div class="item">
+					<h3><a>Kenneth Cole Men Watch Reaction ... 42mm for Business Man in Vietnam</a></h3>
+					<p class="mb10"><a href="">Kho hàng Nordstromrack</a></p>
+					<p>Mã đơn hàng: UAM-9C12345</p>
+					<p>Ngày đặt hàng: 20/07/2019</p>
+					<div class="status cancel">Đã hủy</div>
+				</div>
+			</div>
+			<div id="pendding" class="section_inner" style="display: none">
+				<img class="img" src="images/graphics/dh-rong.svg" alt="">
+				<h4 class="color_green">Chưa có đơn hàng</h4>
+				<p>Đơn hàng của bạn có thể đã tự hủy nếu chưa được thanh toán trong vòng 24h kể từ thời điểm đặt hàng.
+					Bạn có thể xem trong mục <strong>Tất cả</strong>.</p>
+			</div>
+		</div>
+	</section>
+
+
+	<div class="margin-fixed" style="height: 60px"></div>
+	<section class="btn-fixed-block" style="transform: none;">
+		<button class="btn btn-block">thanh toán đơn hàng</button>
+	</section>
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/svgxuse.min.js" defer></script>
+	<script type="text/javascript" src="js/m_common.js"></script>
+	<script>
+		$(".dkdn_muahang .form-check").click(function () {
+			$(this).addClass('active_ck');
+			$(this).siblings().removeClass('active_ck');
+		});
+		$(".form-group").click(function () {
+			$(this).addClass('focus');
+			$(this).siblings().removeClass('focus');
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="description" content="Trang thương mại điện tử">
+	<meta name="keywords" content="Bán lẻ, bán buôn">
+	<title>Thanh toán</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="all" />
+	<link rel="stylesheet" href="css/m_custom.css" media="all" />
+</head>
+<body>
+	<header class="header-block thanh_toan">
+		<a class="back_step" href=""><img src="images/icons/back_step.svg" alt=""></a>
+		<h1>Hình thức thanh toán</h1>
+	</header>
+	<section id="main_container" class="page-payer clearfix">
+		<section class="checkout-address">
+			<ul class="checkout-process-bar">
+				<li class="active">
+					<svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-location"></use></svg>
+					<span class="checkout-process-bar__text">Nhập địa chỉ</span>
+				</li>
+				<li class="active">
+					<div class="line left"></div>
+                    <svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-payment"></use></svg>
+					<span class="checkout-process-bar__text">Chọn thanh toán</span>
+				</li>
+				<li>
+					<div class="line line--right"></div>
+                    <svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-checked2"></use></svg>
+					<span class="checkout-process-bar__text">Xác nhận</span>
+				</li>
+			</ul>
+		</section>	
+		<section class="bg_white mgrb_10 section_inner mar-top">
+            <div class="payer_tr page-payer__step2">
+            	<h2 class="title">Chọn hình thức thanh toán</h2>
+				<div class="mar_am">
+                    <label class="r_cbbtton radio-inline" data-target="#popupdsach_popupnh" data-toggle="modal">
+                        <p style="color:#333;">Thanh toán online bằng thẻ ATM nội địa/ Internet Banking</p>
+                        <p class="txt_12">Bạn cần tài khoản ngân hàng đã đăng ký Internet Banking để sử dụng phương thức thanh toán này.</p>
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="r_cbbtton radio-inline" data-target="#popupdsach_popupnh" data-toggle="modal">
+                        <p style="color:#333;">Thanh toán bằng chuyển khoản trực tiếp cho US Express</p>
+                        <p class="txt_12">Bạn có thể chuyển khoản bằng Internet Banking/Mobile Banking, tại máy ATM hoặc Quầy giao dịch ngân hàng.</p>
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="r_cbbtton radio-inline">
+                        <p style="color:#333;">Thanh toán bằng thẻ quốc tế Visa, Master, JCB</p>
+                        <p class="txt_12">Thông tin thẻ của bạn được mã hóa, bảo mật an toàn bởi tổ chức thẻ tín dụng lớn nhất thế giới.</p>
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>                                                    
+                </div>			          	    
+                             
+            </div>
+		</section>
+		<div class="notifi_seclect">Vui lòng chọn hình thức thanh toán</div>			
+	</section>
+
+	<!-- Popup Danh sach ngan hang -->
+	<div class="modal fade popupdsach_popupnh" id="popupdsach_popupnh" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal">×</button>
+					<div class="dsach_popupnh">
+						<h2>Chọn ngân hàng</h2>
+						<div class="h_tkmnumb">
+							<form action="">
+								<button type="submit" class="btn_search" value="" name="btn_search"><svg class="icon-us"><use xlink:href="images/icon-us.svg#icon-search-grey"></use></svg></button>
+								<input maxlength="80" class="input_form" placeholder="Tìm ngân hàng" type="search">
+							</form>
+						</div>
+						<ul>
+							<li>Vietcombank</li>
+							<li>BIDV</li>
+							<li>ACB</li>
+							<li>Vietcombank</li>
+							<li>BIDV</li>
+							<li>ACB</li>
+							<li>Vietcombank</li>
+							<li>BIDV</li>
+							<li>ACB</li>
+							<li>Vietcombank</li>
+							<li>BIDV</li>
+							<li>ACB</li>
+							<li>Vietcombank</li>
+							<li>BIDV</li>
+							<li>ACB</li>
+							<li>Vietcombank</li>
+							<li>BIDV</li>
+							<li>ACB</li>																												
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="margin-fixed" style="height:60px"></div>
+	<section class="btn-fixed-block" style="transform: none;">
+	    <button class="btn btn-block">Tiếp tục</button>
+	</section>
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/svgxuse.min.js" defer></script>
+	<script type="text/javascript" src="js/m_common.js"></script>
+	<script>
+		$( ".dkdn_muahang .form-check" ).click(function() {
+			$(this).addClass('active_ck');
+			$(this).siblings().removeClass('active_ck');
+		});
+        $(".form-group").click(function(){
+            $(this).addClass('focus');
+            $(this).siblings().removeClass('focus');
+        }); 		
+	</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Trang thương mại điện tử">
+    <meta name="keywords" content="Bán lẻ, bán buôn">
+    <title>Thanh toán</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" href="css/m_custom.css" media="all" />
+</head>
+
+<body class="white">
+    <header class="header-block thanh_toan">
+        <a class="back_step" href=""><img src="images/icons/back_step.svg" alt=""></a>
+        <h1>Chi tiết đơn hàng giới thiệu</h1>
+        <a href="javascript:;" class="cart-segment">
+            <svg class="icon-us">
+                <use xlink:href="images/icon-us.svg#icon-shopping-cart"></use>
+            </svg>
+            <span class="cart_num">3</span>
+        </a>
+    </header>
+    <section id="main_container" class="affiliate_setting  clearfix">
+        <h2 class="bg-title">Thông tin đơn hàng</h2>
+        <div class="order-affiliate no-border">
+            <p class="black"><strong>Mã đơn hàng: UAM-9H11111</strong></p>
+            <p>Ngày đặt hàng: <span class="black">20/07/2019</span></p>
+            <p>Ngày nhận hàng: <span class="black">Dự kiến 31/07/2019</span></p>
+            <p>Trạng thái đơn hàng: <span class="black">Hàng đang chuyển về Việt Nam</span></p>
+        </div>
+
+        <div class="line-8px"></div>
+        <h2 class="bg-title">Thông tin người đặt hàng</h2>
+        <div class="order-affiliate no-border">
+            <p class="black"><strong>Nguyễn Như Hùng</strong></p>
+            <p>Email: <span class="black">hungnguyen@gmail.com</span></p>
+            <p>Điện thoại: <span class="black">0911111111</span></p>
+        </div>
+        <div class="line-8px"></div>
+        <h2 class="bg-title">Chi tiết đơn hàng</h2>
+        <div class="order-affiliate page-payer">
+            <div class="checkout_sidebar">
+                <ul class="list_oder">
+                    <li>
+                        <div class="ava">
+                            <a href=""><img src="images/graphics/sanpham_1.png" alt=""></a>
+                        </div>
+                        <div class="content">
+                            <h3 class="name"><strong class="sl">2<span>&nbsp;x&nbsp;</span></strong><a href="">Secura
+                                    9100MC1800W Porta ... Black Countertop Burner Black</a></h3>
+                            <div class="option">Màu: Black, Size: XL</div>
+                            <div class="price">Giá tại Mỹ: <strong>$99.50</strong></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ava">
+                            <a href=""><img src="images/graphics/sanpham_1.png" alt=""></a>
+                        </div>
+                        <div class="content">
+                            <h3 class="name"><strong class="sl">2<span>&nbsp;x&nbsp;</span></strong><a href="">Secura
+                                    9100MC1800W Porta ... Black Countertop Burner Black</a></h3>
+                            <div class="option">Màu: Black, Size: XL</div>
+                            <div class="price">Giá tại Mỹ: <strong>$99.50</strong></div>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+        <div class="order-affiliate no-border">
+            <ul class="black grid1 txt_14">
+                <li>
+                    <div class="td1">Tổng tiền hàng tại Mỹ</div>
+                    <div class="td2 price"><strong>4,200,000 <em>đ</em></strong> ($1800.99)</div>
+                </li>
+
+            </ul>
+        </div>
+
+    </section>
+
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/svgxuse.min.js" defer></script>
+    <script src="js/zebra_datepicker.min.js"></script>
+    <script type="text/javascript" src="js/m_common.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.datepicker').Zebra_DatePicker({
+                format: 'd/m/Y'
+            });
+            $('.tra_tk').find('.view').click(
+                function () {
+                    if ($(this).next().css('display') == 'none') {
+                        $('.inf').slideUp();
+                        $(this).next().stop(true, true).slideDown();
+                        $('.tra_tk').removeClass('active');
+                        $(this).parent().addClass('active');
+
+                    } else {
+                        $(this).parent().find('.inf').slideUp();
+                        $('.tra_tk').removeClass('active');
+                    }
+                }
+            )
+        });
+    </script>
+</body>
+
+</html>
